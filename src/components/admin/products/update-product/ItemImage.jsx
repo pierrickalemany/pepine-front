@@ -20,7 +20,7 @@ export function ItemImage(item) {
       {isLoading && <SpinnerImage />}
       <TiDeleteOutline
         onClick={() => handleDeleteImage(item?.id)}
-        className="absolute top-0 right-0 text-white z-10 cursor-pointer m-2 h-6 w-6"
+        className="absolute top-0 right-0 text-red z-10 cursor-pointer m-2 h-6 w-6"
       />
       <Image
         src={item?.url}
